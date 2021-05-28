@@ -1,0 +1,12 @@
+{
+  "name": "bday",
+  "displayName": "bday",
+  "expo": {
+    "name": "bday",
+    "slug": "bday",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
