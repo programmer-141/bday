@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     
   },
   dis:{
-    width:'98%',
+    width:'97%',
     color:'white',
     fontSize:15,
     fontFamily:'Poppins',

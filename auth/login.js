@@ -4,12 +4,12 @@ import { StyleSheet, Image, Text, Button, View,TextInput } from 'react-native';
 export default function Login({input,input2,setInput,setInput2}) {
   return (
     <View style={styles.container}>
-      <Text style={styles.text2} >Big Surprise
-      is waiting for you</Text>
+      <Text style={styles.text2} >Adhi <Text style={{color:'#008fe5'}} > 1-june-2002 </Text> grahalu anni vatiki istamochinatu thiruguthunayii..sariga bhumi dhani kaksha lo thiruguthunapudu...</Text>
       <Text style={styles.text} >User</Text>
       <TextInput value = {input} onChangeText={setInput} style = {styles.input} />
       <Text style={styles.text} >Passcode</Text>
       <TextInput value = {input2} onChangeText={setInput2} style = {styles.input} />
+      <Text style={styles.text3}>india lo oka ammayi janminchindhi...ame pedhayi..kondharu manchi snehithulani sampadinchukuni...snathosham ga undhi..Aa ammayi peru ni enter cheyandi..</Text>
     </View>
   );
 }
@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
   input: {
     height: 35,
     width:'70%',
-    margin: 12,
     borderWidth: 1,
     borderRadius:5,
     borderColor:'white',
@@ -33,19 +32,30 @@ const styles = StyleSheet.create({
     padding:5,
   },
   text:{
-    fontSize:20,
+    fontSize:15,
     fontFamily:'Integral',
+    marginVertical:20,
     color:'white',
-    letterSpacing:0.5,
-    marginTop:20,
+    letterSpacing:1,
   },
   text2:{
-    fontSize:25,
+    marginVertical:20,
+    fontSize:14,
     fontFamily:'Integral',
-    color:'white',
+    color:'#dddde3',
     letterSpacing:0.5,
     textAlign:'center',
-    marginBottom:20,
-    width:'90%'
+    lineHeight:22,
+    width:'85%'
+  },
+  text3:{
+    marginVertical:40,
+    fontSize:14,
+    fontFamily:'Integral',
+    color:'#dddde3',
+    letterSpacing:0.5,
+    textAlign:'center',
+    lineHeight:22,
+    width:'85%'
   }
 });

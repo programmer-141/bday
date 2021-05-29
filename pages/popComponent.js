@@ -7,10 +7,13 @@ export default function PopCard ({navigation}) {
   const pressHandler = () => {
     navigation.navigate('Wishes from Loved once 💘')
   }
+  const pressHandler2 = () => {
+    navigation.navigate('Memories')
+  }
   return(
     <>
       <View style={styles.container}>
-        <Image source={bg} blurRadius={5} style={styles.image} />
+        <Image source={bg} blurRadius={3} style={styles.image} />
         <Image source={gimg} style={styles.image2} />
       </View>
       <View style={styles.textCont}>
@@ -21,7 +24,7 @@ export default function PopCard ({navigation}) {
           <TouchableOpacity style={styles.appButtonContainer} onPress={pressHandler} >
            <Text style={styles.appButtonText}>Wishes</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.appButtonContainer} onPress={pressHandler} >
+          <TouchableOpacity style={styles.appButtonContainer} onPress={pressHandler2} >
            <Text style={styles.appButtonText}>Memories</Text>
         </TouchableOpacity>
         </View>

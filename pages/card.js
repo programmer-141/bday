@@ -20,10 +20,16 @@ export default function Card (){
       />
       <Post 
         style={{flex:2}}
-       // image={require('../assets/Images/ug.jpg')}
+        image={require('../assets/Images/t.jpg')}
         title='Tarun'
-        //dis='"Best Best Bestee...geethu always be happy ma"
-        //Happy Birthday geethu...'
+        dis='"Na life lo the one and only important prosons anta geetha #Potti Killer headache my bestie of life"
+        Happy Birthday Potti...'
+      />
+      <Post 
+        style={{flex:2}}
+        image={require('../assets/Images/m.jpg')}
+        title='Mouni'
+        dis='"Wish you many more happy returns of the day thalli ..stay blessed...may all ur dreams come true ma ...very nice person..nv appudu navvuthu happy undali raa ...chala thakuva tym loo manchi sister ayav ...u r a cute nd lovely person ever I met ....ma bunny nv appudu elage happy ga kalisi undali ....enka mana bonding increase avali raa ...always be happy thalli ....njoy ur day ...lv uh maa"'
       />
       <Post 
         style={{flex:2}}
@@ -55,17 +61,17 @@ export default function Card (){
       />
       <Post 
         style={{flex:2}}
-        //image={require('../assets/Images/ug.jpg')}
-        title='Chaitu'
-        //dis='"Best Best Bestee...geethu always be happy ma"
-        //Happy Birthday geethu...'
+        image={require('../assets/Images/r.jpg')}
+        title='Rupesh'
+        dis='"Geethu my cute  sister a sister from another mother and my girl bestie appudu ilaney vundu aa potti#mental"
+            "Wish you a many more happy returns of the day chelli #keep smiling be happy rock ur days #may all ur dreams come true"'
       />
       <Post 
         style={{flex:2}}
         //image={require('../assets/Images/ug.jpg')}
-        title='Rupesh'
-        //dis='"Best Best Bestee...geethu always be happy ma"
-        //Happy Birthday geethu...'
+        title='Chaitu'
+        dis='"geetha chala manchidhi, Potti dhi, Cute Puppy, Baga allari chesthadhi, Baga mondidhi, Frnds antye chala estam, Baga thintadhi, Baga adukovachu thindi vishayam lo"
+        Happy Birthday puppy...'
       />
       <Post 
         style={{flex:2}}
