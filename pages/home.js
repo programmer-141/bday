@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, ScrollView, Image, Text, StatusBar, View,TextInput } from 'react-native';
+import { StyleSheet, ScrollView, Image, Text, StatusBar, View, Dimensions } from 'react-native';
 import Card from './card';
 import PopCard from './popComponent';
-
+const {width, height} = Dimensions.get('window'); 
 
 export default function Home({navigation}) {
   return (
@@ -52,8 +52,9 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily:'Integral',
-    fontSize:20,
+    fontSize:width * 0.055,
     color:'white',
     letterSpacing:1,
+    textAlign:'center',
   },
 });

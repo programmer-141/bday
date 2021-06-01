@@ -1,23 +1,22 @@
 
 import React, {useState} from 'react';
-import { StyleSheet  } from 'react-native';
+import { StyleSheet, Dimensions  } from 'react-native';
 import BG from './assets/bg.jpeg';
 import Login from './auth/login';
 import Home from './pages/home';
 import Card from './pages/card';
+import Clicks from './pages/clicks';
 import Memories from './pages/memories';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-
+const {width, height} = Dimensions.get('window'); 
 
 const Stack = createStackNavigator();
 
 export default function Main() {
-  const user = 'geetha';
-  const pass = 'geetha';
+  let user = 'geetha';
   const [input, setInput] = useState(null);
-  const [input2, setInput2] = useState(null);
-  if(input === pass && input2 === user){
+  if(input === user){
     return(
         <NavigationContainer>
           <Stack.Navigator initialRouteName="Home">
@@ -45,7 +44,7 @@ export default function Main() {
                 headerTintColor: 'white',
                 headerTitleStyle: {
                   fontFamily: 'Integral',
-                  fontSize:18,
+                  fontSize:width * 0.045,
                 },
               }}
             />
@@ -59,7 +58,21 @@ export default function Main() {
                 headerTintColor: 'white',
                 headerTitleStyle: {
                   fontFamily: 'Integral',
-                  fontSize:18,
+                  fontSize:width * 0.045,
+                },
+              }}
+            />
+            <Stack.Screen 
+            name='Best Clicks 😂💓🤭'
+            component={Clicks} 
+            options={{
+                headerStyle: {
+                  backgroundColor: '#151515',
+                },
+                headerTintColor: 'white',
+                headerTitleStyle: {
+                  fontFamily: 'Integral',
+                  fontSize:width * 0.045,
                 },
               }}
             />
@@ -68,7 +81,7 @@ export default function Main() {
       )
   }else{
     return(
-      <Login input = {input} setInput = {setInput} input2 = {input2} setInput2 = {setInput2}/>
+      <Login input = {input} setInput = {setInput} />
     )
   }
 }
